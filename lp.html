@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC landing page</title>
+    <link rel="stylesheet" href="lpstyle.css">
+</head>
+<body>
+  <section>
+   
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img  class="logo" src="file:///C:/Users/Ramesh/Pictures/KFC-Emblem.jpg.png" alt="kfc"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </header>
+     
+     
+    <div class="content">
+        <div class="textBox">
+            <h2 class="lt">It's not just Chicken <br> It's <span>KFC</span></h2>
+            <P>   
+                 KFC (also commonly known as the Kentucky Fried Chicken) is an American Fast food restaurant
+                 chain headquartered in Louisville,Kentucky that specializes in fried chicken.The Chain is a 
+                 subsidiary of Yum!Brands,a restaurant company that also owns the Pizza Hut and Taco Bell chains,
+                 KFC was founded by Colonel Harland Sanders , an entrepreneur who begain selling fried from his 
+                 road side restaurant in Corbin,Kentucky , during the Great Depression
+                
+                </P>
+                 <a href="#">Learn More</a>
+        </div>
+        <div class="imgbox">
+            <img src="file:///C:/Users/Ramesh/Pictures/kfc-chicken.jpg-removebg-preview.png" alt="kfc" class="kfc">
+            </div>
+    </div>
+  
+    <!-- <div class="heading" id="Order">
+        <span>Order Now</span>
+        <h1>Order KFC</h1>
+   
+        </div>-->
+     
+    <ul class="thumb">
+       
+        <li><img src="file:///C:/Users/Ramesh/Pictures/kfc-chicken.jpg-removebg-preview.png" alt="kfc" onclick="imgSlider('file:///C:/Users/Ramesh/Pictures/kfc-chicken.jpg-removebg-preview.png'); changeCircleColor('#eb1919')" ></li>
+        <li><img src="file:///C:/Users/Ramesh/Pictures/kfc-frenchfries.png" alt="frenchfries"  onclick="imgSlider('file:///C:/Users/Ramesh/Pictures/kfc-frenchfries.png'); changeCircleColor('#e9e65b')"></li>
+
+        <li ><img src="file:///C:/Users/Ramesh/Pictures/kfc-burger.jpg-removebg-preview.png" alt="burger"  onclick="imgSlider('file:///C:/Users/Ramesh/Pictures/kfc-burger.jpg-removebg-preview.png'); changeCircleColor('green')" class="burg"></li>
+        
+    </ul>
+    <ul class="sm">
+      
+        <li><a href="#"><img src="file:///C:/Users/Ramesh/Pictures/fb.png" class="fb"></a></li>
+       <li><a href="#"><img src="file:///C:/Users/Ramesh/Pictures/instagram-icon-white-on-black-circle.png" class="insta" ></a></li>
+        <li><a href="#"><img src="file:///C:/Users/Ramesh/Pictures/twitter.png" class="twitter"></a></li>
+       
+     </ul>
+      
+ </section>
+  <script type="text/javascript">
+   function imgSlider(anything){
+    document.querySelector('.kfc').src=anything
+   }
+  function changeCircleColor(color){
+    const circle=document.querySelector('.circle');
+    circle.style.background=color
+}
+  </script>
+</body>
+</html>
